@@ -33,3 +33,27 @@ mydata = ("hello",1000,5.8,"fine")
 
 print(type(city),type(names),type(mydata))
 
+### dealing with list 
+
+```
+>>> l1=["ashu","brand","chris","jas"]
+>>> 
+>>> len(l1)
+4
+>>> l1[0]
+'ashu'
+>>> l1.append(1000)
+>>> l1
+['ashu', 'brand', 'chris', 'jas', 1000]
+>>> l1.insert(0,"python")
+>>> l1
+['python', 'ashu', 'brand', 'chris', 'jas', 1000]
+>>> l1.pop(0)
+'python'
+>>> l1
+['ashu', 'brand', 'chris', 'jas', 1000]
+>>> l1.remove('ashu')
+>>> l1
+['brand', 'chris', 'jas', 1000]
+
+```
