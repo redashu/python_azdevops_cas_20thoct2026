@@ -48,3 +48,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 ashutoshh [ ~ ]$ 
 
 ```
+
+## python keywords
+
+<img src="lang4.png">
+
