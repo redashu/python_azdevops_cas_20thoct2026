@@ -31,3 +31,20 @@ ashutoshh [ ~ ]$
 
 <img src="lang3.png">
 
+### using python shell to run basic code
+
+```
+ashutoshh [ ~ ]$ python
+Python 3.12.15 (main, Oct  5 2026, 16:26:01) [GCC 13.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 3+6
+9
+>>> 88*3
+264
+>>> print(" Hello world , welcome to python")
+ Hello world , welcome to python
+>>> 
+>>> exit()
+ashutoshh [ ~ ]$ 
+
+```
