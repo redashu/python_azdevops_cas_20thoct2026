@@ -180,3 +180,27 @@ dict_values(['Hello123', 9090])
 >>> 
 
 ```
+
+### using time lib to understand function concept 
+
+```
+
+>>> import time 
+>>> dir(time)
+['CLOCK_MONOTONIC', 'CLOCK_MONOTONIC_RAW', 'CLOCK_MONOTONIC_RAW_APPROX', 'CLOCK_PROCESS_CPUTIME_ID', 'CLOCK_REALTIME', 'CLOCK_THREAD_CPUTIME_ID', 'CLOCK_UPTIME_RAW', 'CLOCK_UPTIME_RAW_APPROX', '_STRUCT_TM_ITEMS', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'altzone', 'asctime', 'clock_getres', 'clock_gettime', 'clock_gettime_ns', 'clock_settime', 'clock_settime_ns', 'ctime', 'daylight', 'get_clock_info', 'gmtime', 'localtime', 'mktime', 'monotonic', 'monotonic_ns', 'perf_counter', 'perf_counter_ns', 'process_time', 'process_time_ns', 'sleep', 'strftime', 'strptime', 'struct_time', 'thread_time', 'thread_time_ns', 'time', 'time_ns', 'timezone', 'tzname', 'tzset']
+>>> 
+>>> time.ctime()
+'Wed Oct 21 04:14:51 2026'
+>>> time.sleep(2)
+>>> 
+>>> del time 
+>>> 
+>>> time.sleep(2)
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    time.sleep(2)
+    ^^^^
+NameError: name 'time' is not defined. Did you forget to import 'time'?
+>>> 
+
+```
