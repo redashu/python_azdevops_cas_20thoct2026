@@ -57,3 +57,25 @@ print(type(city),type(names),type(mydata))
 ['brand', 'chris', 'jas', 1000]
 
 ```
+
+### dictionary
+
+```
+
+>>> email_creds = {'ashu@delvex.io':"Hello123",'1211@gmai.com':9090}
+>>> len(email_creds)
+2
+>>> email_creds.keys()
+dict_keys(['ashu@delvex.io', '1211@gmai.com'])
+>>> email_creds.values()
+dict_values(['Hello123', 9090])
+>>> email_creds['ashu@delvex.io']
+'Hello123'
+
+
+>>> email_creds['jack@delvex.io']=9090900
+>>> email_creds
+{'ashu@delvex.io': 'Hello123', '1211@gmai.com': 9090, 'jack@delvex.io': 9090900}
+>>> 
+
+```
