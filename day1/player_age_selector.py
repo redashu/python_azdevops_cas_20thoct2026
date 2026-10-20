@@ -1,5 +1,9 @@
 age = (10,20,30,11,45,77)
+# this is infinite loop 
+while True: 
+    user_age = input("enter user age : ")
 
+# here complete after age count 9 times terminate loop
 valid_age = []
 invalid_age = []
 # implement for loop
