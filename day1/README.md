@@ -107,3 +107,29 @@ ashutoshh [ ~ ]$
 ### string storage 
 
 <img src="str.png">
+
+
+## Info about tuple as storage
+
+```
+t1=(55,99,"hello",90.5)
+>>> 
+>>> type(t1)
+<class 'tuple'>
+>>> 
+>>> len(t1)
+4
+>>> t1[0]
+55
+>>> t1[1:]
+(99, 'hello', 90.5)
+>>> t1[2]
+'hello'
+>>> t1[2][-1]
+'o'
+>>> t2=(56,99,'okk')
+>>> t3=t1+t2
+>>> t3
+(55, 99, 'hello', 90.5, 56, 99, 'okk')
+
+```
