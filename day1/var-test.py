@@ -23,4 +23,13 @@ print(user_name[-1])
 print(len(user_name))
 
 
+# define tuple 
+
+city = ("jk","nz","pr")
+
+names = ("as","ok","fine")
+
+mydata = ("hello",1000,5.8,"fine")
+
+print(type(city),type(names),type(mydata))
 
