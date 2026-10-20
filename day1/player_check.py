@@ -18,7 +18,14 @@ print("My player name is {0} and player age is {1}".format(player_name,player_ag
 
 # if & else 
 
-if int(player_age) > 18 :
-    print(f"Player {player_name} meets the age Requirements")
+if int(player_age) < 18 :
+    print(f"Player {player_name} not Eligible")
+
+elif int(player_age) <= 20 :
+    print(f"player {player_name} required age verification")
+
+elif int(player_age) > 20 and int(player_age) <= 35:
+    print(f"player {player_name} best fit ")
+
 else : 
-    print(f"Player {player_name} is not fit")
+    print(f"Player {player_name} is less preferable but still can play")
