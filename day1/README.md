@@ -104,3 +104,6 @@ ashutoshh [ ~ ]$
 
 <img src="dtype.png">
 
+### string storage 
+
+<img src="str.png">

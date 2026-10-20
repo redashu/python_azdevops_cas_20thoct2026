@@ -13,5 +13,14 @@ print(type(user_name))
 print(type(age))
 print(type(height))
 
+# lets explore string storage understanding 
+
+print(user_name[2])
+print(user_name[0:3])
+
+print(user_name[-1])
+# count len of string 
+print(len(user_name))
+
 
 
