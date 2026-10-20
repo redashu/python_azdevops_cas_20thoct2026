@@ -99,3 +99,8 @@ ashutoshh [ ~ ]$
 
 
 ```
+
+### data types in python 
+
+<img src="dtype.png">
+
