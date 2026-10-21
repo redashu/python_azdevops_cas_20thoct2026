@@ -14,6 +14,42 @@ def fetch_user_data(user_id):
     return response.json()
 
 
+# 2. transformation & validataion 
+def process_data(fetched_data):
+    transformed_records = []
+    # define some basic transformation 
+    for i in fetched_data:
+        record = {
+            "record_id" : i.get("id"),
+            "user_id" : i.get("userId"),
+            "title" : i.get("title","").strip().title(),
+            "body" : i.get("body","").strip()
+
+        }
+    # basic validation 
+        if (
+            isinstance(record["record_id"], int)
+            and isinstance(record["user_id"], int)
+            and record["title"]
+            and record["body"]
+        ):
+            transformed_records.append(record)
+
+    return transformed_records
+
+# main workflow calling function here 
+
+def main():
+    user_ID = int(input("Enter user id like (1-10) : "))
+    fetch_data = fetch_user_data(user_ID)
+    transformed_data = process_data(fetch_data)
+
+    print("Records data for user ",len(fetch_data))
+    print("after validation records are : ",len(transformed_data))
+    time.sleep(2)
+    print("__"*50)
+    print(transformed_data)
+
 # execute program 
 if __name__ == "__main__" :
-    fetch_user_data(2)
+    main()
