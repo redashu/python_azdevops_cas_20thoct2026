@@ -37,6 +37,15 @@ def process_data(fetched_data):
 
     return transformed_records
 
+# save data into json file -- export to json 
+def export_json(data,filename):
+    if not data: 
+        print("No valid Data found")
+        return 
+    with open(filename,'w',encoding='utf-8') as f:
+        json.dump(data,f,indent=4)
+    print(f"json file created : {filename}")
+
 # main workflow calling function here 
 
 def main():
@@ -49,6 +58,8 @@ def main():
     time.sleep(2)
     print("__"*50)
     print(transformed_data)
+    # calling json function 
+    export_json(transformed_data,"operation_ashu_records.json")
 
 # execute program 
 if __name__ == "__main__" :
