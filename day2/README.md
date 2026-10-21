@@ -79,4 +79,32 @@ Collecting idna<4,>=2.5 (from requests)
 ```
 
 
+### Understanding Exception handling 
+
+### common error / execption types 
+
+```
+>>> 2 + 'hii'
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    2 + 'hii'
+    ~~^~~~~~~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> 
+>>> 3/2
+1.5
+>>> 3/0
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    3/0
+    ~^~
+ZeroDivisionError: division by zero
+>>> import  time
+>>> import  time1
+Traceback (most recent call last):
+  File "<python-input-7>", line 1, in <module>
+    import  time1
+ModuleNotFoundError: No module named 'time1'
+
+```
 
