@@ -19,3 +19,8 @@
 >>> t.sleep(1)
 
 ```
+
+## Understanding data fetching fundamentals 
+
+<img src="data1.png">
+
