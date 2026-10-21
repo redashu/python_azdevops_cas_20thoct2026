@@ -8,17 +8,23 @@ import requests
 # connecting with URL 
 
 my_url = "https://jsonplaceholder.typicode.com/posts/1"
+
+my_header = {
+    "Accept" :  "application/json",
+    "User-Agent" : "Google-chrome"
+}
 # connect url 
-response = requests.get(my_url)
+response = requests.get(my_url,timeout=10,headers=my_header)
 print(response)
 # checking function inside response variable 
 print(dir(response))
 # reading data in text format 
-print("Reading response in Text : ",response.text)
-time.sleep(2)
-print("http status code : ", response.status_code)
-print("checking for URL and json data format ")
-print("url orginal : ", response.url)
+# print("Reading response in Text : ",response.text)
+# time.sleep(2)
+# print("http status code : ", response.status_code)
+# print("checking for URL and json data format ")
+# print("url orginal : ", response.url)
 print("reading json response ")
 time.sleep(2)
 print("response in json : ",response.json())
+print(response.headers.get("Content-Type"))
