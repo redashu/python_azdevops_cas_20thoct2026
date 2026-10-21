@@ -108,3 +108,8 @@ ModuleNotFoundError: No module named 'time1'
 
 ```
 
+### file handling in python 
+
+<img src="file1.png">
+
+
