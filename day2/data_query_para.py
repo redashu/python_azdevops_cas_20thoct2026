@@ -12,3 +12,7 @@ response = requests.get(my_url, params=my_param)
 
 data = response.json()
 print(data)
+# use for loop 
+for i in data: 
+    print(f"Title :  {i['title']}")
+    print("_"*50)
