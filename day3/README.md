@@ -36,3 +36,20 @@ urllib3            2.8.0
 
 
 ```
+
+### using pytest to of automated testing 
+
+```
+pytest  -v  day3/test_cal.py  
+======================================== test session starts =========================================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /root/ashu-codes/casinoar-ashu/bin/python3
+cachedir: .pytest_cache
+rootdir: /root/ashu-codes
+collected 1 item                                                                                     
+
+day3/test_cal.py::test_add PASSED                                                              [100%]
+
+========================================= 1 passed in 0.01s ==========================================
+(casinoar-ashu) root@docker-ubuntu:~/ashu-codes# 
+
+```
