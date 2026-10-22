@@ -127,3 +127,34 @@ git push origin  ashu
 <img src="gitf.png">
 
 
+### azdevops understanding model arch 
+
+<img src="azdev1.png">
+
+### here we go 
+
+```
+git clone https://casinoaz-org@dev.azure.com/casinoaz-org/ashu-project/_git/ashu-project
+Cloning into 'ashu-project'...
+remote: Azure Repos
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 18 objects to send. (149 ms)
+Unpacking objects: 100% (18/18), 2.16 KiB | 737.00 KiB/s, done.
+root@docker-ubuntu:~/ashu-codes# ls
+add_function.py   ashu.txt       day1_summary.py  final_demo.py                operation_ashu_records3.json  var-test.py
+api_activity.log  ashu1.txt      day2             new-cas-repo                 player-age-selector.py
+ashu-project      casinoar-ashu  day3             operation_ashu_records.json  player_check.py
+root@docker-ubuntu:~/ashu-codes# cd  ashu-project/
+root@docker-ubuntu:~/ashu-codes/ashu-project# git branch 
+* main
+root@docker-ubuntu:~/ashu-codes/ashu-project# git branch -a
+* main
+  remotes/origin/Brenda
+  remotes/origin/Chris
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JasonLimb
+  remotes/origin/ashu
+  remotes/origin/craig-branch
+  remotes/origin/main
+
+```
