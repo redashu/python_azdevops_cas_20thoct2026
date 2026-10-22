@@ -122,3 +122,8 @@ git push origin  ashu
 
 ```
 
+### git workflow 
+
+<img src="gitf.png">
+
+
