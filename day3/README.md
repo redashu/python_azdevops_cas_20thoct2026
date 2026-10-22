@@ -53,3 +53,42 @@ day3/test_cal.py::test_add PASSED                                               
 (casinoar-ashu) root@docker-ubuntu:~/ashu-codes# 
 
 ```
+
+### code storage / management by SCM 
+
+<img src="scm1.png">
+
+### cicd pipeline understanding 
+
+<img src="scm2.png">
+
+### Understanding azure devops 
+
+<img src="scm3.png">
+
+
+### azure devops components
+
+<img src="az1.png">
+
+### git clone 
+
+```
+git  clone  https://casinoaz-org@dev.azure.com/casinoaz-org/ashu-project/_git/new-cas-repo
+Cloning into 'new-cas-repo'...
+remote: Azure Repos
+remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.
+remote: Found 3 objects to send. (287 ms)
+Unpacking objects: 100% (3/3), 738 bytes | 738.00 KiB/s, done.
+root@docker-ubuntu:~/ashu-codes# ls
+add_function.py   ashu1.txt        day2           new-cas-repo                  player-age-selector.py
+api_activity.log  casinoar-ashu    day3           operation_ashu_records.json   player_check.py
+ashu.txt          day1_summary.py  final_demo.py  operation_ashu_records3.json  var-test.py
+root@docker-ubuntu:~/ashu-codes# cd  new-cas-repo/
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# ls
+README.md
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# ls -a
+.  ..  .git  README.md
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# 
+
+```
