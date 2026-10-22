@@ -92,3 +92,33 @@ root@docker-ubuntu:~/ashu-codes/new-cas-repo# ls -a
 root@docker-ubuntu:~/ashu-codes/new-cas-repo# 
 
 ```
+### creating new branch using git cli 
+
+```
+root@docker-ubuntu:~/ashu-codes# ls
+add_function.py   ashu1.txt        day2           new-cas-repo                  player-age-selector.py
+api_activity.log  casinoar-ashu    day3           operation_ashu_records.json   player_check.py
+ashu.txt          day1_summary.py  final_demo.py  operation_ashu_records3.json  var-test.py
+root@docker-ubuntu:~/ashu-codes# cd  new-cas-repo/
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# 
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# git branch 
+* main
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# 
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# git checkout -b  ashu
+Switched to a new branch 'ashu'
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# git branch 
+* ashu
+  main
+root@docker-ubuntu:~/ashu-codes/new-cas-repo# 
+
+```
+
+### adding code to repo & pushing changes to azure repo remotely 
+
+```
+git  add   ashu-code.py 
+git commit -m "Making permanet chnages "
+git push origin  ashu
+
+```
+
