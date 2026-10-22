@@ -158,3 +158,9 @@ root@docker-ubuntu:~/ashu-codes/ashu-project# git branch -a
   remotes/origin/main
 
 ```
+
+### understnading azure devops pipeline 
+
+<img src="pipe1.png">
+
+
