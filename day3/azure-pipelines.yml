@@ -1,18 +1,41 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-# script is actual place to run your commands 
-
 
 trigger:
-- main
+  - main
 
 pool:
   vmImage: ubuntu-latest
-steps:
-- script: python --version 
-  displayName: 'checking python version'
 
-- script: python hello.py
-  displayName: 'Run python code'
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+    displayName: 'Set up Python'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install requests pytest
+    displayName: 'Install dependencies'
+
+  - script: |
+      pytest -v test_main.py
+    displayName: 'Run Python tests'
+
+  - script: |
+      mkdir -p "$(Build.ArtifactStagingDirectory)/output"
+      python main.py
+    displayName: 'Run Python application'
+    continueOnError: false
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)'
+      Contents: '**/*.json'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/output'
+    displayName: 'Collect JSON output'
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)/output'
+      artifact: 'python-output'
+      publishLocation: 'pipeline'
+    displayName: 'Publish pipeline artifact'
