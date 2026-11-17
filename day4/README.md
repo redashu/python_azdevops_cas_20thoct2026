@@ -4,4 +4,6 @@
 
 <img src="time.png">
 
-##
+## git operation with az repo 
+
+<img src="azrepo1.png">
